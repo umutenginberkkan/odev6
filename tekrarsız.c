@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <math.h>
-
+//çalışmıyor
 int main(){
 
 	int i,j,k;
