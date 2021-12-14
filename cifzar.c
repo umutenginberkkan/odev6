@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <math.h>
 #include <time.h>
-
+//yanlış çalışıyor saçma değerler veriyor
 int main() {
 
 	int a[100];
