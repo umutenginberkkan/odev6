@@ -3,12 +3,14 @@
 #include <stdlib.h>
 #include <time.h>
 #include <math.h>
-//çalışmıyor
+
 int main(){
 
-	int i,j,k;
-	k=0;
+	int i,j,k,d;
+	k=15;
+	d = 0;
 	int a[15];
+
 	for(i = 0;i<15;i++){
 		a[i]=rand()%15+1;
 	printf("k dizisinin %d.elemanı =%d   ",i+1,a[i]);
@@ -17,9 +19,27 @@ int main(){
 
 
 	for(i=0;i<15;i++){
-			for(j=0;j<i;j++){
-					if(a[i]==a[j]){k++;break;}
+			for(j=1;j<i;j++){
+					if(a[i]==a[j]){k--;break;}else{
+
+					}
 				}
 			}
+	int b[k];
+	printf("%d",k);
+
+	for(i=0;i<15;i++){
+				for(j=1;j<i;j++){
+						if(a[i]==a[j]){break;}else{
+							b[d]=a[i];d++;
+						}
+					}
+				}
+
+	for (i=0;i<k;i++){
+		printf("yeni k dizisinin %d.elemanı =  %d   ",i+1,b[i]);
+	}
+
+
 
 }
